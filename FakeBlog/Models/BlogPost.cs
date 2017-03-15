@@ -19,9 +19,11 @@ namespace FakeBlog.Models
         public DateTime PublishedDate { get; set; }
         public string Content { get; set; }
         public bool IsDraft { get; set; }
-        public bool Edited { get; set; }
-        public string URL { get; set; }
+        //public bool Edited { get; set; }
+        // string URL { get; set; }
 
+        public Author BlogAuthor { get; set; }
+        public List<Draft> Drafts { get; set; }
 
     }
 }

@@ -10,5 +10,14 @@ namespace FakeBlog.Models
     {
         [Key]
         public int DraftId { get; set; }
+
+        [Required]
+        public string Content { get; set; }
+
+        public string Edit { get; set; }
+
+        [Required]
+        public bool IsPublished { get; set; }
+
     }
 }

@@ -17,5 +17,7 @@ namespace FakeBlog.Models
         public string PasswordHash { get; set; }
 
         public List<BlogPost> BlogPosts { get; set; }
+
+        public ApplicationUser BaseUser { get; set; }
     }
 }
