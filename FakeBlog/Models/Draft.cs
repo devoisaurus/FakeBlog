@@ -19,5 +19,7 @@ namespace FakeBlog.Models
         [Required]
         public bool IsPublished { get; set; }
 
+        public Author BlogAuthor { get; set; }
+
     }
 }
