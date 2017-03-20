@@ -1,27 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
 namespace FakeBlog.DAL
 {
-    interface BlogRepository
+    public class BlogRepository : IRepository
     {
-        //CREATE
-        void AddDraft();
-        
+        public void AddDraft()
+        {
+            throw new NotImplementedException();
+        }
 
-        //READ
-        
+        public bool EditDraft(int DraftId)
+        {
+            throw new NotImplementedException();
+        }
 
-        //UPDATE
-        bool PublishDraft(int DraftId);
-        bool EditDraft(int DraftId);
+        public void GetDraft()
+        {
+            throw new NotImplementedException();
+        }
 
-        //DELETE
-        bool RemovePost(int BlogPostId);
-        bool RemoveDraft(int DraftId);
+        public bool PublishDraft(int DraftId)
+        {
+            throw new NotImplementedException();
+        }
 
+        public bool RemoveDraft(int DraftId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool RemovePost(int BlogPostId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
